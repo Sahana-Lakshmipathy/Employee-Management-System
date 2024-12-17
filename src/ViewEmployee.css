@@ -1,0 +1,95 @@
+/* Container for the ViewEmployee component */
+.view-container {
+   max-width: 500px;
+   margin: 40px auto;
+   padding: 30px;
+   border-radius: 12px;
+   background-color: #f9f9f9;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   font-family: 'Arial', sans-serif;
+   color: #333;
+ }
+ 
+ /* Header */
+ .view-container h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 24px;
+   color: #007bff;
+ }
+ 
+ /* Input Field */
+ .view-container input {
+   display: block;
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 20px;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+   font-size: 16px;
+   transition: border-color 0.3s ease;
+ }
+ 
+ .view-container input:focus {
+   border-color: #007bff;
+   outline: none;
+   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+ }
+ 
+ /* Button */
+ .view-container button {
+   width: 100%;
+   padding: 12px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 6px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ .view-container button:hover {
+   background-color: #0056b3;
+   transform: translateY(-2px);
+ }
+ 
+ .view-container button:active {
+   transform: translateY(0);
+ }
+ 
+ /* Status Message */
+ .status-message {
+   color: red;
+   font-size: 14px;
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ 
+ /* Employee Details */
+ .employee-details {
+   margin-top: 20px;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   background-color: #ffffff;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .employee-details h3 {
+   text-align: center;
+   margin-bottom: 15px;
+   color: #28a745;
+   font-size: 20px;
+ }
+ 
+ .employee-details p {
+   margin: 8px 0;
+   font-size: 16px;
+   color: #555;
+ }
+ 
+ .employee-details p strong {
+   color: #333;
+ }
+ 

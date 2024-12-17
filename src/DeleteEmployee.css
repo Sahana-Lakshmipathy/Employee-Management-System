@@ -1,0 +1,154 @@
+/* Container for the form */
+.add-employee-form {
+   max-width: 600px;
+   margin: 40px auto;
+   padding: 30px;
+   background-color: #ffffff;
+   border-radius: 12px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   font-family: 'Arial', sans-serif;
+   color: #333;
+ }
+ 
+ /* Label Styling */
+ .add-employee-form label {
+   display: block;
+   margin-bottom: 8px;
+   font-size: 15px;
+   font-weight: 600;
+   color: #555;
+ }
+ 
+ /* Input and Select Styling */
+ .add-employee-form input,
+ .add-employee-form select {
+   display: block;
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   font-size: 15px;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .add-employee-form input:focus,
+ .add-employee-form select:focus {
+   border-color: #007bff;
+   outline: none;
+   box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+ }
+ 
+ /* Placeholder Styling */
+ .add-employee-form input::placeholder {
+   color: #aaa;
+   font-style: italic;
+ }
+ 
+ /* Button Styling */
+ .add-employee-form button {
+   display: block;
+   width: 100%;
+   padding: 12px;
+   background-color: #007bff;
+   color: #fff;
+   border: none;
+   border-radius: 6px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ .add-employee-form button:hover {
+   background-color: #0056b3;
+   transform: translateY(-2px);
+ }
+ 
+ .add-employee-form button:active {
+   transform: translateY(0);
+ }
+ 
+ /* Dropdown Styling */
+ .add-employee-form select {
+   appearance: none; /* Removes default arrow on dropdown */
+   background-image: url('data:image/svg+xml;utf8,<svg fill="%23666" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+   background-repeat: no-repeat;
+   background-position: right 12px center;
+   background-size: 16px;
+ }
+ 
+ /* Responsive Styling */
+ @media (max-width: 768px) {
+   .add-employee-form {
+     padding: 20px;
+   }
+   .add-employee-form button {
+     font-size: 14px;
+   }
+ }
+
+ /* Error message for input validation */
+.error-message {
+   color: #dc3545;
+   font-size: 14px;
+   font-weight: bold;
+   margin-top: 5px;
+ }
+ 
+ /* Status message for success or error */
+ .status-message.success {
+   color: #28a745;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 15px;
+ }
+ 
+ .status-message.error {
+   color: #dc3545;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 15px;
+ }
+ 
+ /* Delete Employee Heading Style */
+.delete-heading {
+   color: #007bff; /* Blue color */
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 24px;
+   font-weight: bold;
+ }
+ 
+ /* Delete Container (optional improvements for alignment) */
+ .delete-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 20px;
+ }
+ 
+ /* Error message for validation */
+ .error-message {
+   color: #dc3545;
+   font-size: 14px;
+   font-weight: bold;
+   margin-top: 5px;
+ }
+ 
+ /* Status message for success and error */
+ .status-message.success {
+   color: #28a745;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 15px;
+ }
+ 
+ .status-message.error {
+   color: #dc3545;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 15px;
+ }
+ 
