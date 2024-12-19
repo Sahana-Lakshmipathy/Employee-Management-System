@@ -93,7 +93,37 @@ app.get("/view-employee/:id", (req, res) => {
   });
 });
 
+// Route to modify employee by EmployeeID
+app.put("/modify-employee/:id", (req, res) => {
+  const EmployeeID = req.params.id;
+  const { EmployeeName, EmployeeEmail, EmployeePhone, Department, DateOfJoining, Role } = req.body;
 
+  // SQL query to update employee details
+  const query = `
+    UPDATE employees 
+    SET EmployeeName = ?, EmployeeEmail = ?, EmployeePhone = ?, Department = ?, DateOfJoining = ?, Role = ?
+    WHERE EmployeeID = ?
+  `;
+
+  db.query(
+    query,
+    [EmployeeName, EmployeeEmail, EmployeePhone, Department, DateOfJoining, Role, EmployeeID],
+    (err, result) => {
+      if (err) {
+        console.error("Error updating data:", err);
+        res.status(500).send("Error updating employee data");
+        return;
+      }
+      if (result.affectedRows > 0) {
+        console.log(`Employee with ID ${EmployeeID} updated.`);
+        res.status(200).send("Employee updated successfully");
+      } else {
+        console.log(`Employee with ID ${EmployeeID} not found.`);
+        res.status(404).send("Employee not found");
+      }
+    }
+  );
+});
 
 // Start the server
 const PORT = 5000;
